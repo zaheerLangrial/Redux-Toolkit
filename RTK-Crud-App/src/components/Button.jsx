@@ -7,9 +7,9 @@ const varients = {
 }
 
 function Button(props) {
-    const {child , className , onClick , varient = 'blue'} = props
+    const {child , className , onClick , varient = 'blue' , type} = props
   return (
-    <button className={` px-3 py-1.5 rounded-md ${className} ${varients[varient]}`} onClick={onClick}>
+    <button className={` px-3 py-1.5 rounded-md ${className} ${varients[varient]}`} onClick={onClick} type='type'>
         {child}
     </button>
   )
