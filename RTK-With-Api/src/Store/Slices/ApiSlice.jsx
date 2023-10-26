@@ -6,8 +6,7 @@ export const apiData = createAsyncThunk('apiData', async () => {
       const response = await axios.get("https://jsonplaceholder.typicode.com/users");
       return response.data;
     } catch (error) {
-      console.error('Error', error);
-      throw error; 
+      console.error('Error', error); 
     }
   });
 
